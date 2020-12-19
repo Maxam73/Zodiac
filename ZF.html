@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <title>Zodiac</title>
+
+  <script>
+  var month = 0;
+  var day = 0;
+    function fortune()
+    {
+       month = document.getElementById("m").value;
+       day = document.getElementById("d").value;
+      if(month == 1 || month == 2)
+      {
+        if((day >= 20 && day <=31) || (day >= 1 && day <=18))
+        {
+          document.getElementById("message").innerHTML = "Aquarius";
+          document.getElementById("symbol").innerHTML = "<img src = 'aqua.jpg'>";
+        }
+      }
+    else if(month == 2 || month == 3)
+      {
+        if((day >= 19 && day <=29) || (day >= 1 && day <=20))
+        {
+          document.getElementById("message").innerHTML = "Pisces";
+          document.getElementById("symbol").innerHTML = "<img src = 'fish.png'>";
+        }
+      }
+
+      else if(month == 3 || month == 4)
+      {
+        if((day >= 21 && day <=31) || (day >= 1 && day <=19))
+        {
+          document.getElementById("message").innerHTML = "Aries";
+          document.getElementById("symbol").innerHTML = "<img src = 'aries.png'>";
+        }
+      }
+      //Taurus (4/20 - 5/20)
+    else if(month == 4 || month == 5)
+      {
+        if((day >= 20 && day <=30) || (day >= 1 && day <=20))
+        {
+          document.getElementById("message").innerHTML = "Taurus";
+          document.getElementById("symbol").innerHTML = "<img src = 'taurus.png'>";
+        }
+      }
+
+  else if(month == 5 || month == 6)
+      {
+        if((day >= 21 && day <=31) || (day >= 1 && day <=21))
+        {
+          document.getElementById("message").innerHTML = "Gemini";
+          document.getElementById("symbol").innerHTML = "<img src = 'gem.png'>";
+        }
+      }
+
+    else if(month == 6 || month == 7)
+      {
+        if((day >= 21 && day <=30) || (day >= 1 && day <=22))
+        {
+          document.getElementById("message").innerHTML = "Cancer";
+          document.getElementById("symbol").innerHTML = "<img src = 'cancer.png'>";
+        }
+      }
+
+  else if(month == 7 || month == 8)
+      {
+        if((day >= 23 && day <=31) || (day >= 1 && day <=22))
+        {
+          document.getElementById("message").innerHTML = "Leo";
+          document.getElementById("symbol").innerHTML = "<img src = 'leo.png'>";
+        }
+      }
+
+  else if(month == 8 || month == 9)
+      {
+        if((day >= 23 && day <=31) || (day >= 1 && day <=22))
+        {
+          document.getElementById("message").innerHTML = "Virgo";
+          document.getElementById("symbol").innerHTML = "<img src = 'virgo.png'>";
+        }
+      }
+
+    else if(month == 9 || month == 10)
+      {
+        if((day >= 23 && day <=30) || (day >= 1 && day <=22))
+        {
+          document.getElementById("message").innerHTML = "Libra";
+          document.getElementById("symbol").innerHTML = "<img src = 'libra.png'>";
+        }
+      }
+
+    else if(month == 10 || month == 11)
+      {
+        if((day >= 23 && day <=31) || (day >= 1 && day <=21))
+        {
+          document.getElementById("message").innerHTML = "Scorpio";
+          document.getElementById("symbol").innerHTML = "<img src = 'scorpio.png'>";
+        }
+
+
+    else if(month == 11 || month == 12)
+      {
+        if((day >= 22 && day <=30) || (day >= 1 && day <=21))
+        {
+          document.getElementById("message").innerHTML = "Sagittarius";
+          document.getElementById("symbol").innerHTML = "<img src = 'sag.png'>";
+        }
+      }
+
+    else if(month == 12 || month == 1)
+      {
+        if((day >= 22 && day <=31) || (day >= 1 && day <=19))
+        {
+          document.getElementById("message").innerHTML = "Capricorn";
+          document.getElementById("symbol").innerHTML = "<img src = 'capricorn.png'>";
+        }
+      }
+    }
+  }
+    //  cond1       cond2
+    //Aries March 21 - april 19
+</script>
+<style>
+body {
+ /* The image used */
+ background-image: url("gal.jpg");
+
+ /* Full height */
+ height: 100%;
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+#message{
+  font-size: 100px;
+  color: white;
+}
+#hehe{
+  color: white;
+}
+</style>
+
+</head>
+
+  <body>
+    <h2 id = "hehe">Whats your Horoscope?</h2>
+    <input type = "text" id = "m">
+    <input type = "text" id = "d">
+    <input type = "button" value = "SUBMIT" onclick = "fortune()">
+    <br><hr></hr></br>
+    <center>
+    <span id = "message"></span>
+    <br>
+    <span id = "symbol"></span>
+  </center>
+  </body>
+<html>
